@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/alert_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gina"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/alert_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28-16-2021"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:id="@+id/alert_dailog_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="242dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/image_three" />
+
+    <EditText
+        android:id="@+id/alertTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/post_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/alert_dailog_description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="@string/thoughts"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="19sp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/alert_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:elevation="10dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/alertClose"
+            app:layout_constraintStart_toEndOf="@+id/alert_update"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/alert_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:elevation="10dp"
+            android:text="Update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/alertClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="Close"
+            app:layout_constraintBottom_toBottomOf="@+id/alert_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

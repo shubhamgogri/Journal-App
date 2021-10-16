@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "898126892542",
+    "project_id": "self-33c07",
+    "storage_bucket": "self-33c07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898126892542:android:88aeb7d648643bc139c4af",
+        "android_client_info": {
+          "package_name": "com.shubham.self"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898126892542-4htp70rq24ognsvppht52ajd3kj49n1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3YAjVecduaTS3uVwQCe20lnIi7k87NAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898126892542-4htp70rq24ognsvppht52ajd3kj49n1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
