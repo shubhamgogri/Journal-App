@@ -40,8 +40,8 @@ import java.util.List;
 import java.util.Map;
 
 public class UpdateJournalActivity extends AppCompatActivity {
-
-    private IamAuthenticator authenticator = new IamAuthenticator("FvOQ_IgxmQ3Sc2rcTK_iKWQ2fLUrENZ5JZbjDv0grlCE");
+    private String API_KEY = "ypur own API KEY";
+    private IamAuthenticator authenticator = new IamAuthenticator(API_KEY);
     private NaturalLanguageUnderstanding naturalLanguageUnderstanding =  new
             NaturalLanguageUnderstanding("2021-08-01", authenticator);
     private List<String> targets = new ArrayList<>();
